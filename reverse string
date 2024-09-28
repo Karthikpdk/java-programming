@@ -1,0 +1,14 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+      String data=" karthik";
+      String temp="";
+     int len=data.length()-1;
+      while(len>=0)
+      {
+          temp=temp+data.charAt(len);
+          len--;
+      }
+          System.out.println(temp); 
+       }
+}
