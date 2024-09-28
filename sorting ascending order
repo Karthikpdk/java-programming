@@ -1,0 +1,33 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args) {
+        int n,i,j;
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the number:");
+        n=s.nextInt();
+        s.nextLine();
+        String[] data=new String[n];
+        for(i=0;i<n;i++)
+        {
+            System.out.println("string"+(i+1));
+            data[i]=s.nextLine();
+        }
+        for(i=0;i<n;i++)
+        {
+            for(j=i+1;j<n;j++)
+            {
+                if(data[i].compareTo(data[j])>0)
+                {
+                    String temp=data[i];
+                    data[i]=data[j];
+                    data[j]=temp;
+                }
+            }
+        }
+   System.out.println("ascending order");
+    for(i=0;i<n;i++)
+        {
+            System.out.println(data[i]);
+        }
+    }
+}
